@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en" data-type="service" data-radius="soft" data-buttons="solid" data-motion>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ROC: office tech for local trades in New York, plus art and apparel</title>
+<meta name="description" content="Robert Hayes builds websites, phone systems, cybersecurity and AI call assistants for plumbers, roofers, electricians and builders, and runs a wall art gallery and an apparel line under the same name.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ROC: office tech for local trades in New York">
+<meta property="og:description" content="Websites, phone systems, cybersecurity and AI call assistants for plumbers, roofers, electricians and builders.">
+<meta property="og:image" content="share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#efe7da">
+<!-- <link rel="canonical" href="https://[the client's domain]/"> : add once the domain is known -->
+<meta name="site-kind" content="other">
+<meta name="page-type" content="service">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
+<link rel="stylesheet" href="assets/icons/icon.css">
+<style>
+:root {
+  --p-bg: #efe7da; --p-surface: #e3dbce; --p-ink: #17120e; --p-muted: #605952;
+  --p-accent: #b9481a; --p-accent-ink: #ffffff; --p-action: #b9481a; --p-action-ink: #ffffff;
+  --p-inv-bg: #17120e; --p-inv-surface: #231e19; --p-inv-ink: #efe7da; --p-inv-muted: #958d84;
+  --p-inv-accent: #b9481a; --p-inv-accent-ink: #ffffff; --p-inv-action: #b9481a; --p-inv-action-ink: #ffffff;
+  --font-display: "Work Sans", system-ui, sans-serif;
+  --font-text: "Work Sans", system-ui, sans-serif;
+  --display-weight: 400;
+  --display-tracking: -0.025em;
+  --display-tracking-xl: -0.035em;
+}
+</style>
+<script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+<script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
+<link rel="modulepreload" href="assets/moments/moments.js">
+<link rel="modulepreload" href="assets/moments/lib.js">
+<link rel="modulepreload" href="assets/moments/pinned-chapters/moment.js">
+<style>
+  /* the client's own mark (the ROC diamond), drawn at the logo's size */
+  .roc-mark { width: 24px; height: 24px; flex: none; }
+  /* the moment at rest on a phone: two whole screens, so the next section never peeks in */
+  /* the moment at rest on a phone: at least its two screens, filled by square stills */
+  @media (max-width: 639px) {
+    main > #ventures[data-moment]:not(.is-live) { min-height: calc(2 * 100lvh); }
+    #ventures:not(.is-live) .mo-pc__visual > img { aspect-ratio: 1 / 1; max-height: 34svh; }
+    /* a short phone: a split never shrinks under what it holds, so its section grows instead */
+    :is(#services, #about, #call) > .wrap > .grid.fill { flex: 1 0 auto; }
+  }
+</style>
+</head>
+<body>
+<!-- type: service (site-kind other)
+     deal: hero split (dealt film, then photo; both re-dealt: no film, and no photograph at deal time), nav mega,
+     close photo, footer dark, rhythm space, buttons solid, mark: the client's own ROC diamond (replaces the dealt stack)
+     palette: the client's own colours through start.mjs brand (cream ground, warm black ink, the logo's burnt orange
+     as the one accent); type work-sans
+     moments: pinned-chapters in #ventures -->
+
+<header class="nav">
+  <div class="wrap nav__bar">
+    <a class="skip-link" href="#top">Skip to content</a>
+    <a class="nav__logo" href="#top"><svg class="roc-mark" viewBox="0 0 24 24" aria-hidden="true"><rect x="5.6" y="5.6" width="12.8" height="12.8" transform="rotate(45 12 12)" fill="none" stroke="#1f8f80" stroke-width="1.6"/><rect x="8.6" y="8.6" width="6.8" height="6.8" transform="rotate(45 12 12)" fill="#b9481a"/></svg>ROC</a>
+    <nav class="nav__links" aria-label="Main">
+      <div class="nav__item">
+        <a class="nav__link" href="#services">Services <svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="nav__menu">
+          <div class="wrap grid">
+            <div class="menu-col span-3">
+              <p class="t-label">Get found</p>
+              <a href="#services">Websites<span>Your trade, area and contact</span></a>
+              <a href="#services">Phone systems<span>One number for the business</span></a>
+            </div>
+            <div class="menu-col span-3">
+              <p class="t-label">Stay covered</p>
+              <a href="#services">AI call assistants<span>Answers while you work</span></a>
+              <a href="#services">Cybersecurity<span>Accounts, email and devices</span></a>
+            </div>
+            <a class="menu-card span-3 start-10" href="#ventures">
+              <div class="panel"><img class="frame__img" src="assets/img/roc-art-menu.jpg" alt="ROC diamond artwork in orange and teal on black" loading="lazy" data-source="client" data-subject="the client's own artwork" width="600" height="600"></div>
+              <span class="t-card">ROC Art Gallery</span>
+              <span class="t-small muted">New wall art every week</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav__item"><a class="nav__link" href="#about">About</a></div>
+      <div class="nav__item"><a class="nav__link" href="#ventures">Ventures</a></div>
+      <div class="nav__item"><a class="nav__link" href="#call">Contact</a></div>
+    </nav>
+    <div class="nav__actions">
+      <a class="btn btn--primary" href="#call">Request a call</a>
+    </div>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero hero--split" data-enter aria-labelledby="hero-h">
+    <div class="wrap"><div class="hero-text grid hero__grid">
+      <div class="hero__text span-5">
+        <p class="hero__kicker"><span class="dot" aria-hidden="true"></span>Robert Hayes, New York</p>
+        <h1 id="hero-h">Office tech for New York trades</h1>
+        <p class="hero__lead">Website, phones, security and an AI assistant that picks up when you’re on a job, all set up by one person.</p>
+        <div class="btn-row"><a class="btn btn--primary" href="#call">Request a call<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a><a class="btn btn--secondary" href="#services">See the services</a></div>
+      </div>
+      <div class="hero__media span-6 start-7">
+        <img src="assets/img/photo-f145899142.jpg" alt="A roofer’s gloved hand driving a nail gun into new shingles" style="--ly-pos: 55% 50%" fetchpriority="high" data-source="shoot" data-subject="a roofer at work" width="1280" height="849" srcset="assets/img/photo-f145899142-800.jpg 800w, assets/img/photo-f145899142.jpg 1280w" sizes="(min-width: 1024px) 628px, 100vw">
+        <div class="ly-float">
+          <div class="ly-float__row"><span class="ly-live">Call answered</span><span>7:42 pm</span></div>
+          <div class="ly-float__title">Leak over the garage, quote wanted Thursday</div>
+        </div>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="section" id="services" style="--hm: 2" aria-labelledby="services-h">
+    <div class="wrap">
+      <div class="grid grid--top fill">
+        <div class="span-5 stack-6">
+          <div class="section-head">
+            <h2 id="services-h">Four services from ROC BASE Digital</h2>
+            <p>For plumbers, roofers, electricians and builders who would rather be on the job than at the desk.</p>
+          </div>
+          <ul class="rows">
+            <li><span class="rows__name">Websites</span><p>A clear site: what you do, where you work, how to reach you.</p></li>
+            <li><span class="rows__name">Phone systems</span><p>Business lines that reach you in the van or at home.</p></li>
+            <li><span class="rows__name">Cybersecurity</span><p>Accounts, email and devices locked down against stolen passwords.</p></li>
+            <li><span class="rows__name">AI call assistants</span><p>Answers the calls you miss and passes the job details on to you.</p></li>
+          </ul>
+        </div>
+        <div class="frame frame--photo frame--fill span-6 start-7">
+          <img class="frame__img" src="assets/img/photo-f197019690.jpg" alt="A hand with pliers fixing the wiring under a water heater" loading="lazy" data-source="shoot" data-subject="a plumber at work" width="1280" height="1917" srcset="assets/img/photo-f197019690-800.jpg 800w, assets/img/photo-f197019690.jpg 1280w" sizes="(min-width: 1024px) 628px, 100vw">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about" aria-labelledby="about-h">
+    <div class="wrap">
+      <div class="grid grid--top fill">
+        <div class="span-5 stack-6">
+          <div class="section-head">
+            <h2 id="about-h">Sales taught me people. <span class="muted">Now I build for them.</span></h2>
+          </div>
+          <p class="t-lead">My background is sales and running my own businesses, with time in customer service, logistics and contracting. That’s where I saw how a working business runs, and what gets in its way.</p>
+          <p>Today I put AI, automation and design to work on systems for local businesses and on abstract art you can hang or wear.</p>
+        </div>
+        <!-- client slot: a portrait of Bobby at work goes here (4:5); until then a job-site stand-in -->
+        <div class="frame frame--photo frame--fill span-6 start-7">
+          <img class="frame__img" src="assets/img/photo-f142088948.jpg" alt="Two crew members in hard hats and tool belts walking a job site" loading="lazy" data-source="shoot" data-subject="a contracting job site" width="1280" height="853" srcset="assets/img/photo-f142088948-800.jpg 800w, assets/img/photo-f142088948.jpg 1280w" sizes="(min-width: 1024px) 628px, 100vw">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="ventures" style="--h: 2; --hm: 2" data-moment="pinned-chapters" aria-labelledby="ventures-h">
+    <div class="wrap mo-pc__grid">
+      <div class="mo-pc__text">
+        <h2 id="ventures-h">Three businesses under the ROC name</h2>
+        <ol class="mo-pc__steps">
+          <li class="mo-pc__step">
+            <h3>ROC BASE Digital: tech for the trades</h3>
+            <p>Websites, phone systems, cybersecurity and AI call assistants. “Let us take care of the office while you focus on what makes you money.”</p>
+            <figure class="mo-pc__visual"><img src="assets/img/photo-f174821467.jpg" alt="A roofer climbing the battens of a roof stacked with tiles" data-source="shoot" data-subject="a roofer at work" width="1280" height="853" srcset="assets/img/photo-f174821467-800.jpg 800w, assets/img/photo-f174821467.jpg 1280w" sizes="(min-width: 1024px) 628px, 100vw" loading="lazy"></figure>
+          </li>
+          <li class="mo-pc__step">
+            <h3>ROC Art Gallery: abstract wall art</h3>
+            <p>Paintings and printable art, made with AI as a creative partner and released in a new drop every week.</p>
+            <figure class="mo-pc__visual"><img src="assets/img/roc-art.jpg" alt="ROC diamond artwork: a stepped orange diamond inside a teal outline on black" data-source="client" data-subject="the client's own artwork" width="1280" height="853" srcset="assets/img/roc-art-800.jpg 800w, assets/img/roc-art.jpg 1280w" sizes="(min-width: 1024px) 628px, 100vw" loading="lazy"></figure>
+          </li>
+          <li class="mo-pc__step">
+            <h3>ROC Drip$: apparel, in development</h3>
+            <p>Clothing and merchandise that put the ROC identity and artwork on something you can wear.</p>
+            <figure class="mo-pc__visual"><img src="assets/img/photo-f75686627.jpg" alt="Two hands pulling ink across a silk screen with a squeegee" data-source="shoot" data-subject="screen printing" width="1280" height="960" srcset="assets/img/photo-f75686627-800.jpg 800w, assets/img/photo-f75686627.jpg 1280w" sizes="(min-width: 1024px) 628px, 100vw" loading="lazy"></figure>
+          </li>
+        </ol>
+      </div>
+      <div class="mo-pc__visuals frame"></div>
+    </div>
+  </section>
+
+  <section class="section" id="call" aria-labelledby="call-h">
+    <div class="wrap">
+      <div class="grid grid--top fill">
+        <div class="span-5 stack-6">
+          <div class="section-head">
+            <h2 id="call-h">Request a call about your business</h2>
+            <p>Tell me your trade and what’s in the way: missed calls, an old website, a shared password. After wall art instead? Say so and I’ll send the latest drop.</p>
+          </div>
+        </div>
+        <div class="span-6 start-7">
+          <form class="form card" action="mailto:hello@roc.example" method="post" enctype="text/plain" data-endpoint="" data-sent="Your call request is in. I’ll reply within a day." novalidate>
+            <div class="field"><label for="f-name">Name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-err">
+              <p class="field__error" id="f-name-err" hidden>Write the name I should ask for.</p></div>
+            <div class="field"><label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="f-email-err">
+              <p class="field__error" id="f-email-err" hidden>Write an email address with an @, like name@example.com.</p></div>
+            <div class="field field--full"><label for="f-trade">Trade or business</label>
+              <input id="f-trade" name="trade" type="text" autocomplete="organization" required aria-describedby="f-trade-err">
+              <p class="field__error" id="f-trade-err" hidden>Write your trade, like roofing or plumbing.</p></div>
+            <div class="field field--full"><label for="f-msg">What you need</label>
+              <textarea id="f-msg" name="message" rows="2" required aria-describedby="f-msg-err"></textarea>
+              <p class="field__error" id="f-msg-err" hidden>Write a line about what you need help with.</p></div>
+            <div class="btn-row"><button class="btn btn--primary" type="submit">Request a call</button></div>
+            <p class="form__status" role="status" data-form-status></p>
+            <p class="t-small muted">I reply within a day.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer closing footer--dark ground-inverse" id="contact" aria-labelledby="close-h">
+  <div class="wrap">
+    <div class="closing__cta close--photo">
+      <div class="section-head--split">
+        <div><h2 id="close-h">Get the office off your plate</h2><p class="t-lead">Websites, phones, security and call answering, set up by one person you can call.</p></div>
+        <a class="btn btn--primary" href="#call">Request a call<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+      </div>
+      <div class="close__media"><img style="--pos: 20% 70%" src="assets/img/photo-f142516128.jpg" alt="A plumber working under a bathroom sink" loading="lazy" data-source="shoot" data-subject="a plumber at work" width="1280" height="853" srcset="assets/img/photo-f142516128-800.jpg 800w, assets/img/photo-f142516128.jpg 1280w" sizes="(min-width: 1024px) 628px, 100vw"></div>
+    </div>
+    <div class="closing__links">
+      <div class="grid">
+        <div class="span-4 stack-4">
+          <a class="nav__logo" href="#top"><svg class="roc-mark" viewBox="0 0 24 24" aria-hidden="true"><rect x="5.6" y="5.6" width="12.8" height="12.8" transform="rotate(45 12 12)" fill="none" stroke="#2fb7a4" stroke-width="1.6"/><rect x="8.6" y="8.6" width="6.8" height="6.8" transform="rotate(45 12 12)" fill="#d8602a"/></svg>ROC</a>
+          <p class="footer__lede">Robert Hayes, New York. Business tech, abstract art and apparel.</p>
+        </div>
+        <div class="span-2 footer__col"><h3>Services</h3><ul><li><a href="#services">Websites</a></li><li><a href="#services">Phone systems</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>Ventures</h3><ul><li><a href="#ventures">ROC BASE Digital</a></li><li><a href="#ventures">ROC Art Gallery</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>About</h3><ul><li><a href="#about">Background</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>Contact</h3><ul><li><a href="#call">Call request</a></li></ul></div>
+      </div>
+      <div class="footer__legal">
+        <span>&copy; 2026 Robert Hayes &middot; ROC</span>
+        <div class="socials"></div>
+        <a class="credits" href="credits.html">Photographs via Wikimedia Commons</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<nav class="actionbar" aria-label="Quick actions">
+  <a class="btn btn--primary" href="#call">Request a call</a>
+</nav>
+
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
+</body>
+</html>
